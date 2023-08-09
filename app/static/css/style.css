@@ -1805,3 +1805,119 @@ body {
 
 
 /*-- //Responsive design --*/
+
+
+#crop_Work {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("https://images.pexels.com/photos/2886937/pexels-photo-2886937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+
+
+
+/*Extra mall*/
+
+.mt-100{
+    margin-top:15px;
+    margin-bottom:50px;
+}
+
+
+#logincontent{
+    font-family: Times, "Times New Roman", Georgia, serif;
+    padding-top: 40px;
+    padding-right : 20px;
+}
+
+#logincontent2{
+    font-family: fangsong;
+    padding-top: 25px;
+}
+
+#cardfont{
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size: 19px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+#headercon{
+    padding: 10px;
+    font-family:  Times, "Times New Roman", Georgia, serif;
+    font-size: 35px;
+    color: white;
+    padding-top: 9px;
+}
+
+#headercon2{
+    padding: 10px;
+    font-family:  Times, "Times New Roman", Georgia, serif;
+    font-size: 32px;
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 9px;
+}
+
+#card_top_bt{
+    padding-top: 75px;
+     padding-bottom: 9px;
+}
+
+
+
+#signupcontent{
+    font-family: fangsong;
+    font-size: 64px;
+}
+
+#cardsignup{
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size: 17px;
+}
+
+
+#h1content{
+    font-family: fangsong;
+    font-size: 66px;
+    color: white;
+}
+
+#Notes-font{
+     font-family: fangsong;
+}
+
+#containsty{
+  justify-content: space-around;
+}
+
+.original_txt{
+    background-color: white;
+    padding:20px;
+}
+
+.summary_txt{
+    background-color: white;
+    padding:20px;
+}
+
+.h3content{
+    font-family: fangsong;
+    font-size: 30px;
+    color: white;
+}
+
+#submitButton {
+    background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+#ferti-reslt{
+     font-family: cursive;
+}

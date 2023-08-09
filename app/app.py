@@ -108,7 +108,7 @@ fertilizer_dic = {
         """
     }
 
-# crop_dict = {0 :apple,  banana -> 1 blackgram -> 2 chickpea -> 3 coconut -> 4 coffee -> 5 cotton -> 6 grapes -> 7 jute -> 8 kidneybeans -> 9 lentil -> 10 maize -> 11 mango -> 12 mothbeans -> 13 mungbean -> 14 muskmelon -> 15 orange -> 16 papaya -> 17 pigeonpeas -> 18 pomegranate -> 19 rice -> 20 watermelon -> 21}
+crop_dictionary = { 0 : 'apple' ,  1: 'banana' , 2: 'blackgram' , 3: 'chickpea' , 4: 'coconut' , 5: 'coffee' , 6: 'cotton' , 7: 'grapes ', 8: 'jute' ,  9: 'kidneybeans' , 10: 'lentil' , 11: 'maize' , 12 : 'mango' , 13 : 'mothbeans' , 14 : 'mungbean' , 15 : 'muskmelon' , 16 : 'orange' , 17 : 'papaya' , 18 : 'pigeonpeas' ,  19 : 'pomegranate' , 20 : 'rice',  21 : 'watermelon' }
 
 
 # Loading crop recommendation model
@@ -177,8 +177,6 @@ def fertilizer_recommendation():
 # render disease prediction input page
 
 
-
-
 # ===============================================================================================
 
 # RENDER PREDICTION PAGES
@@ -205,9 +203,12 @@ def crop_prediction():
             data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
             my_prediction = crop_recommendation_model.predict(data)
             final_prediction = my_prediction[0]
+            final_prediction_2 = crop_dictionary[my_prediction[0]]
 
+        # if final_prediction in crop_dict:
+        #     final_prediction_value = crop_dict[final_prediction]
 
-            return render_template('crop-result.html', prediction=final_prediction, title=title)
+            return render_template('crop-result.html', prediction=final_prediction_2, title=title)
 
         else:
 
